@@ -1,16 +1,11 @@
-# Authentication & Profile Management API
+# JavaScript_learning
+
+A simple JavaScript learning repo, including an Authentication & Profile Management API project.
+
+## Authentication & Profile Management API
 
 A simple student-friendly REST API built with:
 
-- Node.js
-- Express.js
-- MongoDB
-- Mongoose
-- JWT authentication
-- bcryptjs password hashing
-- Multer profile image upload
-- express-rate-limit
-- dotenv
 
 ## 1. Project structure
 
@@ -249,13 +244,6 @@ middleware/errorHandler.js
 ```
 
 It handles:
-- Mongoose validation errors
-- duplicate values such as email/SKU
-- invalid MongoDB IDs
-- Multer upload errors
-- authentication errors
-- unknown routes
-- general server errors
 
 ## 8. Rate limiting
 
@@ -263,9 +251,3 @@ Authentication endpoints use `express-rate-limit` to reduce repeated login/regis
 
 ## 9. Important student-project behavior
 
-- Passwords are never stored as plain text.
-- JWT is required for every protected endpoint.
-- User ID for protected operations comes from JWT.
-- Profile images are stored in `/uploads`.
-- Product stock decreases when a booking is placed.
-- Total booking amount is calculated on the server rather than trusted from the client.
